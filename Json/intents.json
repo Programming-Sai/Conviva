@@ -1,0 +1,544 @@
+[
+    {
+        "tag": "greeting",
+        "verb": "Greet",
+        "patterns": [
+            "hello",
+            "hi",
+            "hey",
+            "morning",
+            "afternoon",
+            "evening",
+            "greetings",
+            "yo",
+            "good",
+            "day",
+            "sup",
+            "what's up",
+            "howdy",
+            "hey there",
+            "wassup",
+            "wossup"
+        ],
+        "responses": [
+            "Good day! How may I be of assistance?",
+            "Greetings! It's a pleasure to serve you.",
+            "Hello there! How can I assist you today?",
+            "Hi! I'm here to help. What can I do for you?",
+            "Good day! I'm at your service.",
+            "Hey there! How may I assist you?",
+            "Hello! What can I do for you today?",
+            "Greetings! How can I be of service to you?",
+            "Good day! How may I help you?",
+            "Hello! It's a pleasure to assist you today.",
+            "Good day! How may I be of service?"
+        ],
+        "required-words": []
+    },
+    {
+        "tag": "farewell",
+        "verb": "Say goodbye",
+        "patterns": [
+            "goodbye",
+            "bye",
+            "see",
+            "later",
+            "take",
+            "care",
+            "farewell",
+            "have",
+            "good",
+            "day",
+            "great",
+            "later",
+            "bye"
+        ],
+        "responses": [
+            "Goodbye! Have a wonderful day!",
+            "Farewell! Wishing you all the best!",
+            "Bye! Take care and stay safe!",
+            "See you later! Until next time!",
+            "Take care! Looking forward to our next interaction!",
+            "Until next time! Farewell and take care!",
+            "Goodbye! Stay well and take care of yourself!",
+            "Bye! Have a great day ahead!",
+            "See you later! Take care and goodbye!",
+            "Take care! Farewell and best wishes!",
+            "Farewell! Until we meet again!",
+            "Goodbye! May your day be filled with happiness and success!",
+            "Bye! Stay safe and take care!",
+            "Take care of yourself! Goodbye and see you soon!",
+            "Farewell! Wishing you a pleasant day!",
+            "Later! Take care!",
+            "Adios! Have a great day!",
+            "So long! Until next time!",
+            "Catch you later! Bye!",
+            "Bye for now! Have a good one!",
+            "See you soon! Take care!",
+            "Bye-bye! Stay safe!"
+        ],
+        "required-words": []
+    },
+    {
+        "tag": "gratitude",
+        "verb": "Express gratitude",
+        "patterns": [
+            "thank",
+            "you",
+            "thanks",
+            "appreciate",
+            "thankful",
+            "thx"
+        ],
+        "responses": [
+            "You're welcome!",
+            "No problem!",
+            "Glad I could help!",
+            "Anytime!",
+            "It was my pleasure!",
+            "Happy to assist!",
+            "You bet!",
+            "No worries!",
+            "Of course!",
+            "Don't mention it!",
+            "You're too kind!",
+            "It's all good!",
+            "Thanks for the appreciation!",
+            "I'm here to help anytime!",
+            "My pleasure!",
+            "You're awesome!",
+            "Cheers to you too!"
+        ],
+        "required-words": []
+    },
+    {
+        "tag":"wikipedia-search",
+        "verb": "Search Wikipedia",
+        "patterns":[
+                    "what",
+                    "what's",
+                    "can",
+                    "you",
+                    "search",
+                    "wiki",
+                    "wikipedia",
+                    "find"
+        ],
+        "responses":[
+            "Alright", 
+            "Commencing Search", 
+            "Certainly, searching Wikipedia.",
+            "Initiating Wikipedia search.",
+            "Exploring Wikipedia now.",
+            "Searching for information on Wikipedia.",
+            "OK, This may take a momment" 
+        ],
+        "required-words": ["wiki", "wikipedia"]   
+    },
+    {
+        "tag": "introduction",
+        "verb": "Introduce yourself",
+        "patterns": [
+            "my",
+            "name",
+            "i'm",
+            "call",
+            "am"      
+        ],
+        "responses": [
+            "Nice to meet you!",
+            "Pleased to make your acquaintance!",
+            "Greetings!",
+            "Hi! How may I help you?",
+            "Nice to meet you, What brings you here?",
+            "Hello, How's your day going?",
+            "Hey , nice to meet you! What can I assist you with?",
+            "Hello, How can I be of service?",
+            "Hi It's a pleasure to meet you! What can I do for you?",
+            "Hey, good to see you! How can I assist you today?"
+        ],
+        "required-words": []
+    }
+    ,
+    {
+        "tag": "assistance",
+        "verb": "Provide assistance",
+        "patterns": [
+            "help",
+            "need",
+            "assistance",
+            "support",
+            "assist",
+            "guidance",
+            "aid",
+            "assist"
+        ],
+        "responses": [
+            "Of course, I'm here to assist you!",
+            "Sure, what do you need help with?",
+            "How can I assist you today?",
+            "I'm here to help. What can I do for you?",
+            "You've come to the right place for assistance!",
+            "Sure thing! Let me know what you need help with.",
+            "I'm at your service. What do you require assistance with?",
+            "I'm ready to assist you. What can I do to help?",
+            "I'm here to provide support. How can I assist you?",
+            "Absolutely! Tell me what you need help with.",
+            "I'm here to lend a hand. What can I do for you?",
+            "Certainly! Just let me know what you need help with.",
+            "Consider it done! How can I assist you today?",
+            "Count on me for assistance. What do you need help with?",
+            "I'm ready to help. What can I do for you?"
+        ],
+        "required-words": [
+            "help",
+            "assistance",
+            "support",
+            "assist",
+            "guidance",
+            "aid",
+            "assist"
+        ]
+    }
+    ,
+    {
+        "tag": "apology",
+        "verb": "Accept an apology",
+        "patterns": [
+            "sorry",
+            "apologies",
+            "apologize"
+        ],
+        "responses": [
+            "No problem, apology accepted!",
+            "It's alright, don't worry about it.",
+            "No need to apologize!",
+            "That's okay, mistakes happen.",
+            "Apology accepted. Let's move forward.",
+            "Don't worry about it. We all make mistakes.",
+            "No worries. Let's put it behind us.",
+            "It's all good. No harm done.",
+            "You're forgiven. Let's focus on the present.",
+            "No problem at all. Let's keep going.",
+            "Apology accepted. Let's continue.",
+            "It's fine. Let's not dwell on it.",
+            "No need to apologize. Let's move on.",
+            "You're forgiven. Let's carry on.",
+            "That's okay. Let's keep things moving."
+        ],
+        "required-words": []
+    }
+    ,{
+        "tag": "feedback",
+        "verb": "Acknowledge feedback",
+        "patterns": [
+            "feedback",
+            "suggestions",
+            "improvement",
+            "thoughts",
+            "suggestion",
+            "opinions",
+            "input",
+            "ideas"
+        ],
+        "responses": [
+            "Thank you for your feedback! We'll take it into consideration.",
+            "We appreciate your suggestions!",
+            "Your input is valuable to us!",
+            "Thanks for sharing your thoughts with us!",
+            "We're grateful for your suggestions!",
+            "Your feedback helps us improve!",
+            "Your thoughts matter to us! Thank you!",
+            "Thanks for the suggestion! We'll look into it.",
+            "We value your feedback! Thank you!",
+            "Your ideas are important to us!"
+        ],
+        "required-words": []
+    },
+    {
+        "tag": "confirmation",
+        "verb": "Confirm something?",
+        "patterns": [
+            "yes",
+            "yeah",
+            "yup",
+            "absolutely",
+            "sure",
+            "certainly",
+            "definitely",
+            "indeed",
+            "affirmative",
+            "alright",
+            "ok"
+        ],
+        "responses": [
+            "Great!",
+            "Perfect!",
+            "Excellent!",
+            "Wonderful!",
+            "That's fantastic!",
+            "Awesome!",
+            "Fantastic!",
+            "Brilliant!",
+            "Outstanding!",
+            "Marvelous!"
+        ],
+        "required-words": []
+    },
+    {
+        "tag": "denial",
+        "verb": "Say No to Something i said?",
+        "patterns": [
+            "no",
+            "nope",
+            "not",
+            "nah",
+            "negative",
+            "not interested",
+            "not now",
+            "not really"
+        ],
+        "responses": [
+            "Okay, no problem!",
+            "Understood!",
+            "That's alright!",
+            "No worries!",
+            "Got it!",
+            "Sure thing!",
+            "Alright!",
+            "Fair enough!",
+            "I understand!",
+            "No problem!"
+        ],
+        "required-words": []
+    },
+    {
+        "tag": "inquiry",
+        "verb": "Inquire about something",
+        "patterns": [
+            "what",
+            "how",
+            "explain",
+            "tell",
+            "details",
+            "information"
+        ],
+        "responses": [
+            "Sure, let me explain...",
+            "Here's some information about that...",
+            "I'd be happy to provide some details.",
+            "I'll explain it to you...",
+            "Let me break it down for you...",
+            "Here's what you need to know...",
+            "I'll give you a brief overview...",
+            "I can explain it in detail...",
+            "I'll walk you through it...",
+            "I'll provide you with the necessary information..."
+        ],
+        "required-words": []
+    },
+    {
+        "tag": "request_suggestion",
+        "verb": "Need a Suggestion",
+        "patterns": [
+            "suggestion",
+            "thoughts",
+            "recommendation",
+            "your",
+            "ideas",
+            "advice"
+        ],
+        "responses": [
+            "Sure, I'd be happy to help with a suggestion!",
+            "Of course, I'm here to offer recommendations!",
+            "I'm ready to provide you with some suggestions.",
+            "Sure thing! What kind of suggestion are you looking for?",
+            "Absolutely! How can I assist you with a recommendation?",
+            "I'm here to help. What type of suggestion do you need?",
+            "Of course! Let me know what you're thinking.",
+            "Sure, I can provide you with some recommendations.",
+            "I'd be glad to help. What's on your mind?",
+            "No problem! What kind of suggestion are you seeking?"
+        ],
+        "required-words": []
+    },
+    {
+        "tag": "open-cmd",
+        "verb": "Open the Terminal/Commmand Prompt?",
+        "patterns": [
+                        "open", 
+                        "command", 
+                        "prompt", 
+                        "cmd",
+                        "launch", 
+                        "start", 
+                        "terminal"
+                    ],
+        "responses": [
+            "Certainly, opening Command Prompt.",
+            "Opening Command Prompt now.",
+            "Command Prompt is launching.",
+            "Understood, starting Command Prompt.",
+            "Command Prompt is being opened.",
+            "No Problem.",
+            "Consider it done!",
+            "No worries, I'll take care of it."
+        ],
+        "required-words": [
+            "cmd",
+            "terminal",
+            "command prompt"
+        ]
+    },
+    {
+        "tag":"search-google",
+        "verb": "Search Google",
+        "patterns":[
+                    "what",
+                    "what's",
+                    "can",
+                    "you",
+                    "search",
+                    "google",
+                    "look", 
+                    "find", 
+                    "query"
+        ],
+        "responses":[
+                        "Alright", 
+                        "Acknowledged, initiating Google search.",
+                        "Commencing search on Google.",
+                        "Executing search query.",
+                        "Searching on Google now.", 
+                        "OK, This may take a momment" 
+        ],
+        "required-words": ["google"]  
+    },
+    {
+        "tag":"play-youtube-video",
+        "verb": "Play YouTube video",
+        "patterns":[
+                    "play",
+                    "can",
+                    "you",
+                    "youtube",
+                    "video",
+                    "watch", 
+                    "stream", 
+                    "view" 
+        ],
+        "responses":[
+                        "Alright", 
+                        "Searching for video to play", 
+                        "OK, This may take a momment",
+                        "Certainly, playing YouTube video.",
+                        "Initiating video playback.",
+                        "Starting YouTube video.",
+                        "Playing requested video on YouTube."
+        ],
+        "required-words": ["youtube"]   
+    },
+    {
+        "tag":"time-telling",
+        "verb": "Tell time",
+        "patterns":[
+                    "what",
+                    "what's",
+                    "time",
+                    "date",
+                    "tell"
+        ],
+        "responses":[
+            "Alright",
+            "Sure",
+            "Of course, here is the current time.",
+            "Sure, providing the current time."
+        ],
+        "required-words": []
+    },
+    {
+        "tag":"summarizer",
+        "verb": "Summarize Text",
+        "patterns":[
+                    "summarize",
+                    "summary"
+        ],
+        "responses":[
+            "Sure, thing",
+            "Alright, let me summarize it for you",
+            "OK."
+        ],
+        "required-words":["summary", "summarize"]
+    },
+    {
+        "tag":"mini-youtube",
+        "verb": "Open the YouTube downloader",
+        "patterns":[
+                    "youtube-downloader",
+                    "music-downloader",
+                    "video-downloader",
+                    "mini-youtube",
+                    "downloader"
+        ],
+        "responses":[
+            "Sure, thing",
+            "Alright, let me open the downloader for you",
+            "Sure thing, just a moment while I fetch the downloader for you.",
+            "Got it, I'll get the downloader ready for you.",
+            "No problem, I'll open up the downloader for you right away."
+        ],
+        "required-words":["mini-youtube", "downloader"]
+    },
+    {
+        "tag": "repeat",
+        "verb": "Me To Repeat After You?",
+        "patterns": [
+            "repeat this",
+            "say again",
+            "mimic me",
+            "after me",
+            "repeat after me"
+        ],
+        "responses": ["", ""],
+        "required-words": ["repeat"]
+    },
+    {
+        "tag": "file-chat",
+        "verb": "Handle file chat",
+        "patterns": [
+            "document",
+            "documents",
+            "file",
+            "files",
+            "according",
+            "to",
+            "my"
+        ],
+        "responses": ["", ""],
+        "required-words": ["files", "file"]
+    },
+    {
+        "tag": "unknown",
+        "verb": "Are You Saying Something I don't know?",
+        "patterns": [],
+        "responses": [
+            "Sorry, I'm not sure I follow.",
+            "I'm still learning. Could you rephrase that?",
+            "I'm not familiar with that. Could you provide more context?",
+            "I'm not quite catching your meaning. Can you elaborate?",
+            "I'm afraid I can't help with that at the moment.",
+            "Hmm, that's beyond my current capabilities. Could you try something else?",
+            "I'm not programmed to understand that yet. Can you try another question?",
+            "I'm sorry, I'm not equipped to respond to that.",
+            "It seems I'm not able to interpret that. Can you try a different query?",
+            "I'm still learning and that's not something I know about yet. Can you try asking in a different way?",
+            "I'm not sure I understand. Could you provide more details?",
+            "That's a bit outside my scope. Can you provide more information?",
+            "I'm not familiar with that topic. Could you try asking something else?",
+            "I'm sorry, but I'm not capable of understanding that. Can you try a different question?"
+        ],
+        "required-words": []
+    }
+    
+    
+] 
