@@ -1264,7 +1264,7 @@ class MenuBarEntries(tk.Menu):
         file_menu.add_command(label='Open Summarised Text File', 
                               command=lambda file_path=os.path.join(os.getcwd(), 'Persistence Documents', 'summary_result.txt'): self.open_text_file(file_path=file_path))
         file_menu.add_command(label='Open Database Folder', 
-                              command=lambda: filedialog.askdirectory(initialdir=os.path.join(os.getcwd(), 'db'), title='Select A File'))
+                              command=lambda: filedialog.askdirectory(initialdir=os.path.join(os.getcwd(), 'Database'), title='Select A File'))
         file_menu.add_command(label='Open Models Folder', 
                               command=lambda: filedialog.askdirectory(initialdir=os.path.join(os.getcwd(), 'Models'), title='Select A File'))
         file_menu.add_separator()
