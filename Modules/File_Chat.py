@@ -25,14 +25,14 @@ class FileChat:
     Attributes:
         KEY (str): The HuggingFace API key loaded from the environment.
         embeddings (SentenceTransformerEmbeddings): The embeddings model used for text embeddings.
-        db (Chroma): The Chroma database loaded from the embeddings.
+        Database (Chroma): The Chroma database loaded from the embeddings.
     """
     
     def __init__(self):
         """Initialize the FileChat class."""
         self.KEY = os.getenv('HUGGINGFACE_KEY')
         self.embeddings = SentenceTransformerEmbeddings(model_name='all-MiniLM-L6-v2')
-        self.db = self.load_embedding()
+        self.Database = self.load_embedding()
 
     def chat(self):
         """Interact with the user to manage and chat with files."""
@@ -79,8 +79,8 @@ class FileChat:
         documents = loader.load()
         text_splitter = RecursiveCharacterTextSplitter(chunk_size=200, chunk_overlap=200)
         texts = text_splitter.split_documents(documents)
-        db = Chroma.from_documents(texts, self.embeddings, persist_directory='./db')
-        db = None
+        Database = Chroma.from_documents(texts, self.embeddings, persist_directory='./Database')
+        Database = None
 
     def qa_llm(self) -> RetrievalQA:
         """
@@ -90,7 +90,7 @@ class FileChat:
             RetrievalQA: The retrieval-based QA system.
         """
         llm = self.load_llm()
-        retriever = self.db.as_retriever()
+        retriever = self.Database.as_retriever()
         return RetrievalQA.from_chain_type(
             llm=llm,
             chain_type='stuff',
@@ -127,21 +127,21 @@ class FileChat:
             top_p=0.95
         ))
 
-    def search_DB(self) -> list:
+    def search_Database(self) -> list:
         """
         Search the Chroma database.
 
         Returns:
             list: The search results.
         """
-        return self.db.similarity_search_with_score(input('search for... '), k=2)
+        return self.Database.similarity_search_with_score(input('search for... '), k=2)
 
     def clear_database(self):
         """Clear the Chroma database."""
-        db_directory = './db'
-        if os.path.exists(db_directory):
-            shutil.rmtree(db_directory)
-        os.makedirs(db_directory)
+        Database_directory = './Database'
+        if os.path.exists(Database_directory):
+            shutil.rmtree(Database_directory)
+        os.makedirs(Database_directory)
 
     def load_embedding(self) -> Chroma:
         """
@@ -150,7 +150,7 @@ class FileChat:
         Returns:
             Chroma: The loaded Chroma database.
         """
-        return Chroma(persist_directory='./db', embedding_function=self.embeddings)
+        return Chroma(persist_directory='./Database', embedding_function=self.embeddings)
 
     def basic_ingest(self, file_path: str) -> bool:
         """
@@ -170,7 +170,7 @@ class FileChat:
         text_splitter = RecursiveCharacterTextSplitter(chunk_size=200, chunk_overlap=200)
         texts = text_splitter.split_documents(documents)
         try:
-            Chroma.from_documents(texts, self.embeddings, persist_directory='./db')
+            Chroma.from_documents(texts, self.embeddings, persist_directory='./Database')
             return True
         except:
             return False
