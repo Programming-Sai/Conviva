@@ -1,0 +1,5 @@
+.env
+Ai.code-workspace
+__pycache__/
+conviva_app.log
+tempCodeRunnerFile.py
