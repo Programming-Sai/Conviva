@@ -684,7 +684,7 @@ class Conviva(ctk.CTk):
         self.canvas.create_window(100, 595, anchor='sw', window=self.back_button)
 
         self.canvas_text = self.canvas.create_text(
-            int(self.size[0]/2), 595, anchor='s', text=f'Page: {int(self.end/6)}/{int(len(self.yt_search_result_data)/6)}',
+            int(self.size[0]/2), 595, anchor='s', text=f'Page: {0 if len(self.yt_search_result_data) == 0 else int(self.end/6) }/{int(len(self.yt_search_result_data)/6)}',
             font=('Arial Black', 20)
         )
 
@@ -981,8 +981,11 @@ class Conviva(ctk.CTk):
         Returns:
             Dict: The loaded JSON data.
         """
-        with open(path, 'r') as rj:
-            return json.loads(rj.read())
+        try:
+            with open(path, 'r') as rj:
+                return json.loads(rj.read())
+        except Exception as e:
+                return []
 
     def open_download_screen(self, event: tk.Event, id: int, image: Any, data: Any) -> None:
         """
