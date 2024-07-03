@@ -36,7 +36,7 @@ etelemetry==0.3.1
 exceptiongroup==1.2.1
 fastapi==0.111.0
 fastapi-cli==0.0.4
-filelock==3.15.1
+filelock==3.15.4
 fitz==0.0.1.dev2
 Flask==3.0.3
 flatbuffers==24.3.25
@@ -91,7 +91,7 @@ networkx==3.3
 nibabel==5.2.1
 nipype==1.8.6
 numba==0.60.0
-numpy==1.26.4
+numpy==1.23.5
 oauthlib==3.2.2
 onnxruntime==1.18.0
 opentelemetry-api==1.25.0
@@ -106,7 +106,7 @@ opentelemetry-semantic-conventions==0.46b0
 opentelemetry-util-http==0.46b0
 orjson==3.10.5
 overrides==7.7.0
-packaging==23.2
+packaging==24.1
 pandas==2.2.2
 pathlib==1.0.1
 pdfminer.six==20231228
@@ -144,6 +144,7 @@ PyScreeze==0.1.30
 python-dateutil==2.9.0.post0
 python-dotenv==1.0.1
 python-multipart==0.0.9
+pytils==0.4.1
 pytweening==1.2.0
 pytz==2024.1
 pywhatkit==5.4
@@ -158,7 +159,7 @@ rsa==4.9
 rubicon-objc==0.4.9
 safetensors==0.4.3
 scikit-learn==1.5.0
-scipy==1.13.1
+scipy==1.14.0
 sentence-transformers==3.0.1
 shellingham==1.5.4
 simplejson==3.19.2
@@ -176,6 +177,7 @@ threadpoolctl==3.5.0
 tkhtmlview==0.3.0
 tokenizers==0.19.1
 tomli==2.0.1
+tools==0.1.9
 torch==2.2.2
 tqdm==4.66.4
 traits==6.3.2
@@ -186,7 +188,7 @@ typing-inspect==0.9.0
 typing_extensions==4.12.2
 tzdata==2024.1
 ujson==5.10.0
-urllib3==2.2.1
+urllib3==2.2.2
 uvicorn==0.30.1
 uvloop==0.19.0
 watchfiles==0.22.0
